@@ -3,6 +3,10 @@
 }
 body {
     margin: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+
 }
 a {
     color: black;
@@ -70,17 +74,24 @@ a:hover {
     }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
+    body {
+        position: absolute;
+        margin: 0;
+        height: 100vh;
+        padding: 0;
+        width: 100%;
+    }
     .logo-container {
         display: flex;
     }
     .logo-container > h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .logo-container > h2 > .fa-seedling {
-        font-size: 12px;
+        font-size: 18px;
     }
     .navbar > ul > li {
-        font-size: 12px;
+        font-size: 18px;
     }
     .plant-section {
         padding:1px;
@@ -88,15 +99,17 @@ a:hover {
         margin-right: auto;
         margin-bottom: 10px;
         margin-top: 0px;
-        font-size: 20px;
+        font-size: 10px;
     }
     #plant-section-2 {
         background-color: black;
         color: whitesmoke;
+        width: 100%;
     }
     #plant-section-4 {
         background-color: black;
         color: whitesmoke;
+        width: 100%;
     }
     .plant-image {
         display: block;
@@ -112,17 +125,17 @@ a:hover {
         margin-left: 20px;
     }
     .plant-description {
-        padding: 10px;
+        padding: 5px;
     }
     .plant-description > p {
-        width: 420px;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
     .footer-section {
         background-color: black;
         color: whitesmoke;
-        padding: 25px;
+        padding: 15px;
         margin: 0px;
     }
     .footer-list {
